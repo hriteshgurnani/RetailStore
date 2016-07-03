@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/productNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Microwave Oven" />
+
+        <com.tw.retailstore.utils.CustomImageView
+            android:id="@+id/productImageView"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_below="@+id/productNameTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@android:drawable/sym_action_chat" />
+
+        <View
+            android:id="@+id/separatorOne"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/productImageView"
+            android:layout_marginTop="20dp"
+            android:background="#cdcfd2" />
+
+        <RelativeLayout
+            android:id="@+id/productDetailView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/separatorOne">
+
+            <ImageView
+                android:id="@+id/plusImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@color/light_gray"
+                android:contentDescription="@string/increment_product"
+                android:padding="5dp"
+                android:src="@drawable/btn_add" />
+
+            <TextView
+                android:id="@+id/quantityTextView"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/plusImageView"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/zero"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/minusImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/quantityTextView"
+                android:background="@color/light_gray"
+                android:contentDescription="@string/decrement_product"
+                android:padding="5dp"
+                android:src="@drawable/btn_minus" />
+
+            <TextView
+                android:id="@+id/unitPriceTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toStartOf="@+id/minusImageView"
+                android:gravity="start"
+                android:padding="5dp"
+                android:textColor="@color/priceColor"
+                android:textSize="18sp"
+                tools:text="Unit Price" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/separatorTwo"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/productDetailView"
+            android:background="#cdcfd2" />
+    </RelativeLayout>
+</ScrollView>

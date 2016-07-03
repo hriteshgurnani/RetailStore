@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RetailStore</string>
+    <string name="unit">Unit @ %s</string>
+    <string name="unit_price">Unit Price @ %s</string>
+    <string name="number_of_items">Number of Items: %d</string>
+    <string name="cart_value">Cart Value: %s</string>
+    <string name="cartSession">Cart</string>
+    <string name="price">Price</string>
+    <string name="qty">Qty</string>
+    <string name="products">Products</string>
+    <string name="zero">0</string>
+    <string name="expand_collapse">Expand/Collapse</string>
+    <string name="increment_product">Increment Product</string>
+    <string name="decrement_product">Decrement product</string>
+</resources>

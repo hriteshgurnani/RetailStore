@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/productsGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false"
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:numColumns="@integer/numberOfColumnsInGrid"
+        android:padding="2dp"
+        android:verticalSpacing="2dp" />
+
+</RelativeLayout>

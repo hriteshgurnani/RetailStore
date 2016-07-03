@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_cart_container"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:layout_gravity="center"
+    android:layout_marginEnd="5dp"
+    android:clickable="true"
+    android:visibility="visible">
+
+    <ImageView
+        android:contentDescription="@string/cartSession"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/ic_cart" />
+
+    <TextView
+        android:id="@+id/actionBarProductCountTextView"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_gravity="end|center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/red_circle"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="12dp"
+        android:visibility="visible" />
+
+</FrameLayout>
