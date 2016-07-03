@@ -12,4 +12,5 @@
     <string name="expand_collapse">Expand/Collapse</string>
     <string name="increment_product">Increment Product</string>
     <string name="decrement_product">Decrement product</string>
+    <string name="total_price">Total Price</string>
 </resources>

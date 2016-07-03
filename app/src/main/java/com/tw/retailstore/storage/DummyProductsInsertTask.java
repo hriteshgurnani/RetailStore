@@ -44,35 +44,35 @@ class DummyProductsInsertTask extends AsyncTask<Void, Void, Void> {
         builder.setProductCategory(CATEGORY_ELECTRONICS);
         builder.setProductImageName("oven.png");
         builder.setProductName(PRODUCT_OVEN);
-        builder.setMrp(10);
+        builder.setMrp(5000);
         productList.add(builder.build());
 
         builder.setProductId(2);
         builder.setProductCategory(CATEGORY_ELECTRONICS);
         builder.setProductImageName("television.png");
         builder.setProductName(PRODUCT_TELEVISION);
-        builder.setMrp(20);
+        builder.setMrp(20000);
         productList.add(builder.build());
 
         builder.setProductId(3);
         builder.setProductCategory(CATEGORY_ELECTRONICS);
         builder.setProductImageName("vcleaner.png");
         builder.setProductName(PRODUCT_VACUUM_CLEANER);
-        builder.setMrp(30);
+        builder.setMrp(2500);
         productList.add(builder.build());
 
         builder.setProductId(4);
         builder.setProductCategory(CATEGORY_FURNITURE);
         builder.setProductImageName("table.png");
         builder.setProductName(PRODUCT_TABLE);
-        builder.setMrp(40);
+        builder.setMrp(1000);
         productList.add(builder.build());
 
         builder.setProductId(5);
         builder.setProductCategory(CATEGORY_FURNITURE);
         builder.setProductImageName("almirah.png");
         builder.setProductName(PRODUCT_ALMIRAH);
-        builder.setMrp(50);
+        builder.setMrp(10000);
         productList.add(builder.build());
 
 
@@ -80,7 +80,7 @@ class DummyProductsInsertTask extends AsyncTask<Void, Void, Void> {
         builder.setProductCategory(CATEGORY_FURNITURE);
         builder.setProductImageName("chair.png");
         builder.setProductName(PRODUCT_CHAIR);
-        builder.setMrp(60);
+        builder.setMrp(500);
         productList.add(builder.build());
 
         productContentValues = ProductsPersistenceHelper.getProductContentValues(productList);
