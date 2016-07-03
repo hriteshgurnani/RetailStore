@@ -57,3 +57,10 @@ UNIT TESTS
 Basic Unit tests are available under location **src.test.java.com.tw.retailstore.businesslogic**.
 
 
+ASSUMPTIONS
+==============
+Each Product of the Store will have a unique Product ID.
+It is assumed that the Product Data Master would maintain this contract.
+
+
+
